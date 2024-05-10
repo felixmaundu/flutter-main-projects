@@ -1,0 +1,223 @@
+## body bottom navigation sample
+  body: <Widget>[
+        Text('Home'),
+        Text('search'),
+        Text('post'),
+        Text('notifications'),
+        Text('Messages'),
+        // Container(
+        //   color: Colors.blue,
+        // ),
+        Container(
+          color: Colors.red,
+        ),
+        Container(
+          color: Colors.yellow,
+        ),
+        Container(
+          color: Colors.green,
+        ),
+      ]
+
+
+//  int _page = 0;
+//   //for navigating bottom app bar
+//   int currentState = 0;
+//   List<Widget> widgets = [
+//     // FeedScreen(),
+//     // SearchScreen(),
+//     // AddPostScreen(),
+//     Text('notifications'),
+//     Text('notifications'),
+//     Text('notifications'),
+//     Text('notifications'),
+//     Text('notifications'),
+//     // ProfileScreen(
+//     //     //uid: FirebaseAuth.instance.currentUser!.uid,
+//     //     ),
+//   ];
+
+//   List<Widget> titleString = [
+//     // FeedScreen(),
+//     // SearchScreen(),
+//     // AddPostScreen(),
+//     Text('Home page'),
+//     HomeTop(),
+//     Text('notifications'),
+//     Text('notifications'),
+//     Text('notifications'),
+//     // ProfileScreen(
+//     //     //uid: FirebaseAuth.instance.currentUser!.uid,
+//     //     ),
+//   ];
+//   // List<String> titleString = [
+//   //   "Home page",
+//   //   "notification",
+//   //   "notification",
+//   //   "notification",
+//   //   "notification"
+//   // ];
+//   late PageController pageController; // for tabs animation
+
+//   List<Widget> pages = [
+//     Text('notifications'),
+//     Text('notifications'),
+//     Text('notifications'),
+//     Text('notifications'),
+//     Text('notifications'),
+//     // FeedScreen(),
+//     // const SearchScreen(),
+//     // AddPostScreen(),
+//     // const Text('notifications'),
+//     // ProfileScreen(
+//     //     //uid: FirebaseAuth.instance.currentUser!.uid,
+//     //     ),
+//   ];
+
+//   int currentIndex = 0;
+//   void onTap(int index) {
+//     setState(() {
+//       currentIndex = index;
+//     });
+//   }
+
+//   @override
+//   void initState() {
+//     super.initState();
+//     pageController = PageController();
+//   }
+
+//   @override
+//   void dispose() {
+//     super.dispose();
+//     pageController.dispose();
+//   }
+
+//   void onPageChanged(int page) {
+//     setState(() {
+//       _page = page;
+//     });
+//   }
+
+//   void navigationTapped(int page) {
+//     //Animating Page
+//     pageController.jumpToPage(page);
+//   }
+
+////////////////////////
+/// bottomNavigationBar: BottomNavigationBar(
+//           // backgroundColor: Theme.of(context).bottomAppBarColor == Brightness.light
+//           //     ? Colors.white
+//           //     : Colors.black38,
+//           unselectedFontSize: 0,
+
+//           selectedFontSize: 0,
+//           showSelectedLabels: false,
+//           showUnselectedLabels: false,
+//           elevation: 0,
+//           currentIndex: currentIndex,
+//           onTap: onTap,
+//           type: BottomNavigationBarType.fixed,
+//           //backgroundColor: Colors.white,
+//           items: [
+//             const BottomNavigationBarItem(
+//               label: 'Home',
+//               icon: Icon(Icons.home),
+//             ),
+//             const BottomNavigationBarItem(
+//               icon: Icon(Icons.search),
+//               label: 'Search',
+//             ),
+//             const BottomNavigationBarItem(
+//               icon: Icon(Icons.add),
+//               label: 'Post',
+//             ),
+//             const BottomNavigationBarItem(
+//               // icon: Icon(Icons.notifications_active_outlined),
+//               icon: Icon(Icons.shopping_bag_outlined),
+//               label: 'Notification',
+//             ),
+//             BottomNavigationBarItem(
+//               icon: CircleAvatar(
+//                 key: UniqueKey(),
+//                 radius: 17,
+//                 // backgroundColor: Colors.black12,
+//                 backgroundImage: const CachedNetworkImageProvider(
+//                   'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
+//                 ),
+//               ),
+//               label: 'Account',
+//             ),
+//           ],
+//         ),
+
+//         // body: Center(
+
+//         // );
+//       ),
+//     );
+//   }
+// }
+
+
+## bubble 
+      // BubbleBottomBar(
+      //   opacity: 0,
+      //   currentIndex: currentIndex,
+      //   onTap: changePage,
+      //   borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
+      //   elevation: 8,
+      //   items: <BubbleBottomBarItem>[
+      //     const BubbleBottomBarItem(
+      //         backgroundColor: Colors.black,
+      //         icon: Icon(
+      //           Icons.home,
+      //           color: Colors.indigo,
+      //         ),
+      //         activeIcon: Icon(
+      //           Icons.home,
+      //           color: Colors.indigo,
+      //         ),
+      //         title: Text("Home")),
+      //     const BubbleBottomBarItem(
+      //         backgroundColor: Colors.black,
+      //         icon: Icon(
+      //           Icons.search,
+      //           color: Colors.indigo,
+      //         ),
+      //         activeIcon: Icon(
+      //           Icons.search,
+      //           color: Colors.indigo,
+      //         ),
+      //         title: Text("Search")),
+      //     const BubbleBottomBarItem(
+      //         backgroundColor: Colors.black,
+      //         icon: Icon(
+      //           Icons.folder_open,
+      //           color: Colors.indigo,
+      //         ),
+      //         activeIcon: Icon(
+      //           Icons.folder_open,
+      //           color: Colors.indigo,
+      //         ),
+      //         title: Text("Bookmarks")),
+      //     BubbleBottomBarItem(
+      //         backgroundColor: Colors.black,
+      //         icon: Container(
+      //           height: 24,
+      //           width: 24,
+      //           decoration: const BoxDecoration(
+      //             shape: BoxShape.circle,
+      //             image: DecorationImage(image: AssetImage('assets/user.png')),
+      //             boxShadow: [
+      //               BoxShadow(
+      //                   color: Color(0x5c000000),
+      //                   offset: Offset(0, 1),
+      //                   blurRadius: 5)
+      //             ],
+      //           ),
+      //         ),
+      //         title: const Text("Profile"),
+      //         activeIcon: null),
+      //   ],
+      // ),
